@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width">
+        <meta name="author", content="Yujie">
+        <title>Learning Iframe -Yujie</title>
+        <style>
+            iframe{
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBF5l9rWQFs?si=4eHGHBBm-zHGJCqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d49660.51642838381!2d114.17335066778432!3d22.31432818013546!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1711195084916!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+            src="https://developer.mozilla.org/en-US/docs/Glossary"
+            width="100%"
+            height="500"
+            allowfullscreen
+            sandbox>
+            <p>
+                <a href="/en-US/docs/Glossary">
+                    Fallback link for browsers that don't support iframes
+                </a>
+            </p>
+        </iframe>
+        <embed 
+            src="test.pdf"
+            type="pdf"
+            width="100%"
+            height="100%">
+        <object data="test.pdf" type="application/pdf"
+            width="800" height="1200">
+            <p>You don't have a PDF plugin, 
+                but you can <a href="test.pdf">download the PDF file</a>
+            </p>
+        </object>
+    </body>
+</html>

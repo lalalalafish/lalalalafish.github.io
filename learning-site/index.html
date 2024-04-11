@@ -1,12 +1,286 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
     <head>
+        <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Yujie" />
+        <meta name="Description" content="A Website to introduce Paimon~" />
+        
         <title>LearningWeb-Yujie</title>
+        <!-- Favicon -->
+        <link rel="icon" href="./images/favicon.ico" type = "image/x-icon" />
+
+        <!-- Link: apply CSS and JavaScript -->
+        <link rel="stylesheet" href="styles/styles.css" />
+        <script src="scripts/scripts.js" defer></script>
     </head>
     <body>
+        <!-- Times and Dates -->
+        <time datetime="2016-01-20">20 January 2016</time><br>
+        <!-- Standard simple date -->
+        <time datetime="2016-01-20">20 January 2016</time><br>
+        <!-- Just year and month -->
+        <time datetime="2016-01">January 2016</time><br>
+        <!-- Just month and day -->
+        <time datetime="01-20">20 January</time><br>
+        <!-- Just time, hours and minutes -->
+        <time datetime="19:30">19:30</time><br>
+        <!-- You can do seconds and milliseconds too! -->
+        <time datetime="19:30:01.856">19:30:01.856</time><br>
+        <!-- Date and time -->
+        <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time><br>
+        <!-- Date and time with timezone offset -->
+        <time datetime="2016-01-20T19:30+01:00">
+        7.30pm, 20 January 2016 is 8.30pm in France
+        </time><br>
+        <!-- Calling out a specific week number -->
+        <time datetime="2016-W04">The fourth week of 2016</time>
+
+        <!-- Code -->
+        <pre><code>
+            const para = document.querySelector('p');
+            
+            para.onclick = function(){
+                alert('Owww, stop poking me!');
+            }
+        </code></pre>
+        
+        <p>
+            You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>
+        </p>
+        
+        <p>
+            In the above JavaScript example, <var>para</var>
+            represents a paragraph element
+        </p>
+        
+        <p>
+            Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.
+        </p>
+        
+        <pre>
+        $ <kbd>ping mozilla.org</kbd>
+        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+        64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 </samp>
+        </pre>
+
+        <!-- Supscript and Subscript -->
+        <p>
+            x<sup>2</sup>
+            x<sub>2</sub>
+        </p>
+
+        <!-- Address -->
+        <address>
+            Page written by <a href="../authors/chris-mills">Chris Mills</a>
+        </address>
+
+        <address>
+            <p>
+                Chiris Mills<br />
+                Manchester<br />
+                The Grim North<br />
+                UK
+            </p>
+            <ul>
+                <li>Tel: 01234 567 890</li>
+                <li>Email: me@grim-north.co.uk</li>
+            </ul>
+        </address><address>
+            <p>
+                Chiris Mills<br />
+                Manchester<br />
+                The Grim North<br />
+                UK
+            </p>
+            <ul>
+                <li>Tel: 01234 567 890</li>
+                <li>Email: me@grim-north.co.uk</li>
+            </ul>
+        </address>
+        <!-- Abbreviation -->
+        <p>
+            We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our Web documents<br>
+            I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw.
+        </p>
+
+        <!-- Quotations -->
+        <p>
+            According to 
+            <a href="/en-US/docs/Web/HTML/Element/blockquote">
+                <ctie>MDN blockquote page</ctie>
+            </a>
+        </p>
+        
+        <p>Here is a inline quotations</p>
+        <q 
+            cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+            intended for short quotations that don't require paragraph breaks
+        </q>
+
+
+        <p>Here is a blockquote</p>
+        <blockquote 
+            cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element </strong>
+            (or <em>HTML Block Quotation Element</em>)
+            indicates that the enclosed text is an extended quotation
+        </p>
+        </blockquote>
+        
+
+        <!-- Description Lists -->
+        <dl>
+            <dt>Soliloquy</dt>
+            <dd>In drama, where a characer speaks to themselves...</dd>
+            <dt>Monologue</dt>
+            <dd>
+                In drama, where a character speaks their thoughts out loud to share them
+            </dd>
+            <dt>Aside</dt>
+            <dd>In drama, where a character shares a comment only with the audience for...</dd>
+        </dl>
+
+        <dl>
+            <dt>Apple</dt>
+            <dd>It is red</dd>
+            <dd>It is fruit, not vegetables.</dd>
+        </dl>
+        <!-- Email link -->
+        <a href="mailto:liu619666@163.com">
+            Send email to Yujie~
+        </a>
+
+        <a 
+            href="mailto:liu619666@163.com"
+            cc="name2@rapidtables.com"
+            &bcc="name3@rapidtables.com"
+            &subject="The%20subject%20of%20the%20email"
+            &body="The%20body%20%20of%20the%20email"
+            >
+            Send mail with cc/bcc/subject/body
+        </a>
+        <!-- Link Best Practices -->
+        <p>
+            <a href="https://www.mozilla.org/firefox/">
+                Download Firebox
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.example.com/large-report.pdf">
+              Download the sales report (PDF, 10MB)
+            </a>
+          </p>
+          
+          <p>
+            <a href="https://www.example.com/video-stream/" target="_blank">
+              Watch the video (stream opens in separate tab, HD quality)
+            </a>
+        </p>
+          
+        <p>
+            <a
+                href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+                download="firefox-latest-64bit-installer.exe">
+                Download Latest Firefox for Windows (64-bit) (English, US)
+            </a>
+        </p>
+
+        <!-- Document fragments -->
+        
+        <p>jump to 
+            <a href="index.html#mail">
+                E-mail
+            </a>
+        </p>
+         <!-- Link with title -->
+         <a 
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+            title="More information about the link">
+            Link to Tutor
+        </a>
+        <br><br><br>
+        <!-- Image Link -->
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">
+            <img src="images/paimon.jpg" alt="MDN Web Docs" />
+        </a>
+        <!-- Block Level Link -->
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">
+            <h1>
+                A Block level links
+            </h1>
+            <ul>
+                <li>Even a list</li>
+            </ul>
+        </a>
+        <!-- Basic link -->
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">
+            Link to Tutor
+        </a>
+        <!-- Italic/Bold/Underline -->
+        <p>
+            <i>Italic</i>
+            <b>Bold</b>
+            <u>Underline</u>
+        </p>>
+        <!-- Emphasis -->
+        <p>I am <em>glad</em> you weren't <em>late</em></p>
+        <!-- Strong -->
+        <p> Do <strong>not</strong> be late</p>
+        <!-- List -->
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>hummus</li>
+        </ul>
+
+        <ol>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>hummus</li>
+        </ol>
+        
+        <ul>
+            <li>Colors</li>
+            <ol>
+                <li>Red</li>
+                <li>White</li>
+                <ul>
+                    <li>Not the original color</li>
+                </ul>
+                <li>Yellow</li>
+                <li>Green</li>
+            </ol>
+        </ul>
+        <!-- Paragraph and Headings -->
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <h4>Heading4</h4>
+        <h5>Heading5</h5>
+        <h6>Heading6</h6>
+
+        <p>Paragraph</p>
+
+        This is line1.<br>
+        This is line2.
+        This is line3.
+        This is line4.
+        
+        <h2 id="mail">E-mail</h2>
+        <span style="font-size: 32px;margin: 21px 0;display: block;">
+            I do not have any semantic!
+        </span>
+
+
+
+
         <!-- Element Structure -->
         <em>This is the first test with italic</em>
         
@@ -21,5 +295,42 @@
             src="images/paimon.jpg"
             alt="Paimon: A lovely character in Genshin"
         />
+
+        <!-- P: <img> and its attributes -->
+        <img
+            src = "https://static.zerochan.net/Paimon.full.3141703.png"
+            alt = "Paimon: a lovely character in Genshin"
+            width = 288px
+            height = 512px
+        />
+
+        <!-- Boolean Attributes -->
+        <input type="text" disabled = "disabled" />
+        <input type="text" disabled />
+        <input type="text" />
+        
+        <!-- Omitting Quotes Around Attribute Values -->
+        <a 
+            href=https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#omitting_quotes_around_attribute_values
+            title=The Learning Site>
+            This is the tutor for this page
+        </a>
+
+        <!-- Single/Double Quotes-->
+        <a href="https://developer.mozilla.org/" title="An &quot;interesting&quot; reference">A Example Link</a>
+
+        <!-- Whitespace -->
+        <p id="noWhitespace">Dogs are smart</p>
+        <p id="whitespace">Dogs     
+               are 
+               smart</p>
+
+        <!-- Special Character -->
+        <p>In HTML, you define a paragraph using the &lt;p&gt; element</p>
+
+        <!-- utf-8 -->
+        <p>Japanese example: ご飯が熱い。</p>
+
+        
     </body>
 </html>

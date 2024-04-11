@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width">
+        <meta name="author", content="Yujie Liu">
+        <title>My Voice -Yujie</title>
+    </head>
+    <body>
+        <!-- h1 -->
+        <h1>My Voice</h1>
+
+        <!-- Video -->
+        <video
+            controls
+            autoplay
+            loop
+            width="450"
+            height="800"
+            poster="src/test.png">
+            <source src="src/test.mp4" type="video/mp4">
+            <source src="src/test.webm" type="video/webm">
+            <p>
+                Your browser does not allow to play HTML video
+                Here is a <a href="src/test.mp4">link to video</a>
+                instead
+            </p>
+            <track src="test.srt" default>
+        </video>
+        <br>
+
+        <!-- audio -->
+        <audio controls>
+            <source src="src/test.mp3" type="audio/mp3">
+            <source src="src/test.ogg" type="audio/ogg">
+            <p>
+                Your browser does not allow to play HTML audio
+                Here is a <a href="src/test.mp4">link to video</a>
+                instead
+            </p>
+        </audio>
+    </body>
+</html>

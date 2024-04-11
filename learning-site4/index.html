@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width">
+        <meta name="author", content="Yujie">
+        <title>Learning Video and Audio</title>
+    </head>
+    <body>
+        <!-- video -->
+        <video src="src/rabbit320.webm" controls>
+            <p>
+                Your broser doesn't support HTML Video.
+                Here is a <a href="src/rabbit320.webm">link to the video</a>
+                instead.
+            </p>
+        </video>
+
+        <video controls>
+            <source src="src/rabbit320.webm" type="video/webm">
+            <source src="src/rabbit320.mp4" type="video/mp4">
+            <p>
+                Your browser doesn't support HTML5 video.
+                Here is a <a href="src/rabbit320.mp4">link to the video</a>
+                instead
+            </p>
+        </video>
+
+        <video 
+            controls
+            width="400"
+            height="400"
+            autoplay
+            loop
+            muted
+            poster="src/poster.png">
+            <source src="src/rabbit320.webm" type="video/webm">
+            <source src="src/rabbit320.mp4" type="video/mp4">
+            <p>
+                Your browser doesn't support HTML5 video.
+                Here is a <a href="src/rabbit320.mp4">link to the video</a>
+                instead
+            </p>
+        </video>
+
+        <!-- audio -->
+        <audio controls>
+            <source src="src/viper.mp3" type="audio/mp3">
+            <source src="src/viper.ogg" type="audio/ogg">
+            <p>
+                Your browser doesn't support HTML5 audio.
+                Here is a <a href="src/viper.mp3">link to the video</a>
+                instead
+            </p>
+        </audio>
+
+    </body>
+</html>
